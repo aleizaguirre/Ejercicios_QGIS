@@ -1,0 +1,83 @@
+
+
+\documentclass[11pt,spanish]{article}
+\usepackage[T1]{fontenc}
+\usepackage{selinput}
+\SelectInputMappings{%
+  aacute={á},
+  ntilde={ñ},
+}
+%%\usepackage[latin9]{inputenc}
+
+\usepackage{array}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{graphicx} 
+
+\title{Ejercicios QGIS} 
+
+\date{\vspace{-5ex}}
+
+\begin{document}
+\maketitle
+
+
+\section{Mapas}
+El siguiente mapa muestra la población de las comunidades de Chicago por quintiles según datos del Censo 2010.
+\begin{table}[H]
+ \centering
+ \caption{Población}
+\begin{tabular}{c}
+\includegraphics[scale=0.35]{Chicago_Poblacion1.jpg}
+\end{tabular}
+\end{table}
+
+El siguiente mapa muestra el total de crímenes en la diferentes comunidades de Chicago. El color refiere al quintil de la distribución (mas oscuro mayor valor) y la altura al valor absoluto de la variable. \\
+\begin{table}[H]
+ \centering
+ \caption{Mapa Crimen}
+\begin{tabular}{c}
+\includegraphics[scale=0.35]{Crimen.png}
+\end{tabular}
+\end{table}
+
+El siguiente mapa muestra los precios (per capita) de alquiler de Airbnb en la diferentes comunidades de Chicago. El color refiere al quintil de la distribución (mas oscuro mayor valor) y la altura al valor absoluto de la variable. 
+
+\begin{table}[H]
+ \centering
+ \caption{Mapa  Precios}
+\begin{tabular}{c} 
+\includegraphics[scale=0.35]{Precios.png} 
+\end{tabular}
+\end{table}
+\section{Gráficos}
+
+El siguiente gráfico es un Histograma de Frecuencias Absolutas y  muestra la cantidad de comunidades (observaciones) según rango de precios por persona para el año 2015.
+\begin{table}[H]
+ \centering
+ \caption{Precios}
+\begin{tabular}{c}
+\includegraphics[scale=0.7]{Hist_precios.png}
+\end{tabular}
+\end{table}
+
+
+El siguiente gráfico es un gráfico de dispersión y muestra la asociación positiva que existe entre el nivel de pobreza y de desempleo.
+\begin{table}[H]
+ \centering
+ \caption{Pobreza vs. Desempleo}
+\begin{tabular}{c}
+\includegraphics[scale=0.7]{Plot_pobreza_desocu.png}
+\end{tabular}
+\end{table}
+
+El siguiente gráfico es Histograma de Frecuencias Absolutas en 2 dimensiones que muestra el total de observaciones (comunidades) según rango de ingreso per cápita y número de crímenes.
+\begin{table}[H]
+ \centering
+ \caption{Ingreso Vs. Crímenes}
+\begin{tabular}{c}
+\includegraphics[scale=0.7]{2D_ingreso_crimenes}
+\end{tabular}
+\end{table}
+
+\end{document}
